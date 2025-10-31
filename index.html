@@ -8,32 +8,24 @@ layout: null
   <title>宋梓聪 | Song Zicong</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    :root {
-      --bg: #f5f5f7;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --accent: #0f766e;
-    }
-    * { box-sizing: border-box; }
     body {
       margin: 0;
-      background: var(--bg);
+      background: #f5f5f7;
       font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft Yahei",sans-serif;
       line-height: 1.6;
-      color: var(--text);
+      color: #1f2937;
     }
     header {
       background: radial-gradient(circle at top, #14b8a6, #0f766e);
       color: #fff;
       padding: 1.4rem 1rem 1.1rem;
       display: flex;
-      gap: 1rem;
       justify-content: space-between;
+      gap: 1rem;
       flex-wrap: wrap;
       position: sticky;
       top: 0;
-      z-index: 20;
+      z-index: 10;
     }
     .title-box { display: flex; flex-direction: column; gap: .25rem; }
     .name { font-size: 1.7rem; font-weight: 700; }
@@ -65,11 +57,10 @@ layout: null
       margin: 1.5rem auto 3rem;
       padding: 0 1rem;
       display: grid;
-      grid-template-columns: 1fr;
       gap: 1rem;
     }
     .section {
-      background: var(--card);
+      background: #fff;
       border-radius: .75rem;
       padding: 1rem 1.1rem .6rem;
       box-shadow: 0 10px 30px rgba(0,0,0,.02);
@@ -79,9 +70,6 @@ layout: null
       margin-bottom: .6rem;
       border-bottom: 1px solid rgba(15,118,110,.12);
       padding-bottom: .3rem;
-      display: flex;
-      align-items: center;
-      gap: .5rem;
     }
     .entry {
       display: flex;
@@ -91,17 +79,17 @@ layout: null
     }
     .entry-left { flex: 1; min-width: 0; }
     .entry-title { font-weight: 600; }
-    .entry-sub { font-size: .78rem; color: var(--muted); }
+    .entry-sub { font-size: .78rem; color: #6b7280; }
     .entry-date {
       min-width: 7rem;
       text-align: right;
       font-size: .78rem;
-      color: var(--muted);
+      color: #6b7280;
       white-space: nowrap;
     }
     ul.plain { margin: .35rem 0 .4rem 1rem; padding: 0; }
-    ul.plain li { margin-bottom: .25rem; }
-    a { color: #0f766e; text-decoration: none; }
+    ul.plain li { margin-bottom: .35rem; }
+    a { color: #0f766e; text-decoration: none; word-break: break-all; }
     @media (max-width: 650px) {
       .entry { flex-direction: column; }
       .entry-date { text-align: left; }
@@ -121,9 +109,8 @@ layout: null
     </div>
   </header>
 
-  <main id="cv">
-
-    <!-- 中文版内容 -->
+  <main>
+    <!-- ================= 中文界面 ================= -->
     <div id="cv-zh">
       <!-- 联系方式 -->
       <div class="section">
@@ -150,15 +137,13 @@ layout: null
       <!-- 教育背景与荣誉 -->
       <div class="section">
         <div class="sec-title">教育背景与荣誉</div>
-
         <div class="entry">
           <div class="entry-left">
             <div class="entry-title">香港大学（The University of Hong Kong, HKU）</div>
-            <div class="entry-sub">博士研究生，获全额奖学金</div>
+            <div class="entry-sub">博士研究生 · 获全额奖学金</div>
           </div>
           <div class="entry-date">2022.8–至今</div>
         </div>
-
         <div class="entry">
           <div class="entry-left">
             <div class="entry-title">香港大学（HKU）</div>
@@ -166,11 +151,10 @@ layout: null
           </div>
           <div class="entry-date">2020.9–2021.9</div>
         </div>
-
         <div class="entry">
           <div class="entry-left">
             <div class="entry-title">山东大学（Shandong University）</div>
-            <div class="entry-sub">中文语言文学学士；平均绩点87.15/100（专业前10%）；获“优秀学生奖学金”</div>
+            <div class="entry-sub">中文语言文学学士；GPA 87.15/100（专业前10%）；获“优秀学生奖学金”</div>
           </div>
           <div class="entry-date">2014.9–2018.6</div>
         </div>
@@ -179,29 +163,27 @@ layout: null
       <!-- 研究经历 -->
       <div class="section">
         <div class="sec-title">研究经历</div>
-
         <div class="entry">
           <div class="entry-left">
             <div class="entry-title">香港大学林金锡教授课题组（博士阶段）</div>
-            <div class="entry-sub">教师教育与教育技术支持的语言学习方向</div>
+            <div class="entry-sub">教师教育、教育技术支持的语言学习、教师PLN与非正式学习</div>
           </div>
           <div class="entry-date">2022.9–至今</div>
         </div>
-
         <div class="entry">
           <div class="entry-left">
             <div class="entry-title">香港大学林金锡教授课题组（全职研究助理）</div>
             <div class="entry-sub">
-              主要参与项目与职责：
               <ul class="plain">
-                <li>参与E&amp;T资助项目“通过生成式人工智能提升少数族裔学生写作能力：WISE框架”（Enhancing Ethnic-Minority Students’ Writing Skills through GenAI: The WISE Framework, 2023–2024）研究与写作</li>
+                <li>参与E&amp;T资助项目“通过生成式人工智能提升少数族裔学生写作能力：WISE框架”（Enhancing Ethnic-Minority Students’ Writing Skills through GenAI: The WISE Framework, 2023–2024）的研究与写作工作</li>
                 <li>协助撰写公共政策研究资助计划（Public Policy Research Funding Scheme, 2024）项目申请书</li>
-                <li>协助设计香港大学三、四年级教师培训课程，准备教学大纲、教案、课件、学习单等材料</li>
-                <li>参与《词汇教学手册》（Vocabulary Teaching Manual）项目的目标设定与教案编写</li>
-                <li>参与“技术增强词汇学习的设计：研究综述”（The Design of Technology-Enhanced Vocabulary Learning: A Research Synthesis），负责文献综述、数据分析和图表制作，使用 CMA 做元分析</li>
-                <li>参与“线上与混合式中文阅读教学”（Teaching Chinese Reading in Online and Blended Modes）项目的文献收集与撰写</li>
-                <li>参与TDG 2021“技术促进同伴互评与反思”项目申请；参与TDG 2020“同伴互评与反思提升微格教学”项目数据收集与学生访谈</li>
-                <li>协助设计UGC“高校虚拟教学与学习计划”课程</li>
+                <li>协助设计香港大学三、四年级学生教师培训课程，并准备教学大纲、教案、课件及学习单等教学材料</li>
+                <li>参与《词汇教学手册》（Vocabulary Teaching Manual）项目的目标设定与教案编写工作</li>
+                <li>参与“技术增强词汇学习的设计：研究综述”（The Design of Technology-Enhanced Vocabulary Learning: A Research Synthesis），负责文献综述、数据分析和图表制作，使用 CMA 进行元分析</li>
+                <li>参与“线上与混合式中文阅读教学”项目（Teaching Chinese Reading in Online and Blended Modes）的文献收集与撰写工作</li>
+                <li>协助撰写 TDG 2021“技术促进同伴互评与反思”项目（Facilitating Peer Review and Reflection through Technology）的申请书</li>
+                <li>参与 TDG 2020“同伴互评与反思提升微格教学”项目（Enhancing Microteaching through Peer Review and Reflection），访谈学生以了解其对同伴互评与反思的看法、自我效能、问题与收获</li>
+                <li>协助设计中国香港教资会（UGC）资助的“高校虚拟教学与学习计划”项目（Initiatives for Virtual Teaching and Learning by Individual University）</li>
               </ul>
             </div>
           </div>
@@ -209,40 +191,43 @@ layout: null
         </div>
       </div>
 
-      <!-- 期刊发表 -->
+      <!-- 期刊发表（完整） -->
       <div class="section">
         <div class="sec-title">期刊发表</div>
         <ul class="plain">
-          <li>Song, Z., Qin, J., Jin, F., Cheung, W. M., &amp; Lin, C. H. (2025). A case study of teachers’ generative artificial intelligence integration processes and factors influencing them. <em>Teaching and Teacher Education, 165</em>, 105157.</li>
-          <li>Jin, F., Peng, X., Sun, L., Song, Z., Zhou, K., &amp; Lin, C. (2025). Knowledge (co‐)construction among artificial intelligence, novice teachers, and experienced teachers in an online professional learning community. <em>Journal of Computer Assisted Learning, 41(2)</em>, e70004.</li>
-          <li>Jin, F., Song, Z., Cheung, W. M., Lin, C. H., &amp; Liu, T. (2024). Technological affordances in teachers' online professional learning communities: A systematic review. <em>Journal of Computer Assisted Learning, 40(3)</em>, 1019–1039.</li>
-          <li>Zhou, K., Jin, F., Li, W., Song, Z., Huang, X., &amp; Lin, C. H. (2024). The design of technology-enhanced vocabulary learning: A systematic review. <em>Education and Information Technologies, 29(12)</em>, 14875–14897.</li>
-          <li>Zhou, K., Sun, L., Song, Z., Jin, F., Cheung, W. M., &amp; Lin, C.-H. (2023). The design of technology-enhanced second-language vocabulary learning: A research synthesis. <em>SSRN Electronic Journal</em>.</li>
-          <li>Sun, Z., Xu, R., Deng, L., Jin, F., Song, Z., &amp; Lin, C. H. (2023). Beyond coding and counting: Exploring teachers’ practical knowledge online through epistemic network analysis. <em>Computers &amp; Education, 192</em>, 104647.</li>
+          <li>Song, Z., Qin, J., Jin, F., Cheung, W. M., &amp; Lin, C. H. (2025). A case study of teachers’ generative artificial intelligence integration processes and factors influencing them. <em>Teaching and Teacher Education, 165</em>, 105157. https://doi.org/10.1016/j.tate.2025.105157 （SCI教育学一区，教师教育顶刊）</li>
+          <li>Jin, F., Peng, X., Sun, L., Song, Z., Zhou, K., &amp; Lin, C. (2025). Knowledge (co‐)construction among artificial intelligence, novice Teachers, and experienced teachers in an online professional learning community. <em>Journal of Computer Assisted Learning, 41(2)</em>, e70004. https://doi.org/10.1111/jcal.70004 （SCI教育学一区）</li>
+          <li>Jin, F., Song, Z., Cheung, W. M., Lin, C. H., &amp; Liu, T. (2024). Technological affordances in teachers' online professional learning communities: A systematic review. <em>Journal of Computer Assisted Learning, 40(3)</em>, 1019–1039. https://doi.org/10.1111/jcal.12935 （SCI教育学一区）</li>
+          <li>Zhou, K., Jin, F., Li, W., Song, Z., Huang, X., &amp; Lin, C. H. (2024). The design of technology-enhanced vocabulary learning: A systematic review. <em>Education and Information Technologies, 29(12)</em>, 14875–14897. https://doi.org/10.1007/s10639-023-12423-y</li>
+          <li>Zhou, K., Sun, L., Song, Z., Jin, F., Cheung, W. M., &amp; Lin, C.-H. (2023). The Design of Technology-Enhanced Second-Language Vocabulary Learning: A Research Synthesis. <em>SSRN Electronic Journal</em>. https://doi.org/10.2139/ssrn.4347187</li>
+          <li>Sun, Z., Xu, R., Deng, L., Jin, F., Song, Z., &amp; Lin, C. H. (2023). Beyond coding and counting: Exploring teachers’ practical knowledge online through epistemic network analysis. <em>Computers &amp; Education, 192</em>, 104647. https://doi.org/10.1016/j.compedu.2022.104647 （SCI教育学一区，教育技术顶刊，IF 10.5）</li>
         </ul>
       </div>
 
-      <!-- 会议文章 -->
+      <!-- 会议文章（完整） -->
       <div class="section">
         <div class="sec-title">会议文章</div>
         <ul class="plain">
-          <li>Jin, F., Lin, C.-H., &amp; Song, Z. (2025). Exploring the effect of GenAI on students’ writing and visualizing the writing process through HRV. AERA Annual Meeting, Denver.</li>
-          <li>Song, Z., Jin, F., Lin, C.-H., &amp; Cheung, W. M. (2024). Unveiling the pathways to informal learning: A mixed-method investigation into motivation and attitudes of teachers. AERA Annual Meeting.</li>
-          <li>Song, Z., Sun, L., Lin, C.-H., &amp; Hui, S. Y. (2024). Promoting pre-service teachers’ competencies in teaching online. AERA Annual Meeting.</li>
-          <li>Jin, F., Song, Z., Sun, L., &amp; Lin, C.-H. (2024). The AI assistant in teacher online professional learning communities: What matters most and how? AERA Annual Meeting.</li>
-          <li>Lin, C.-H., Hui, S. Y., Song, Z., &amp; Zhou, K. (2021, December). Enhancing microteaching through peer review and reflection. International Conference on Learning and Teaching 2021.</li>
+          <li>Jin, F., Lin, C.-H., &amp; Song, Z. (2025). Exploring the effect of GenAI on students’ writing and visualizing the writing process through HRV (heart rate variability). <em>In Proceedings of the 2025 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/2193066</li>
+          <li>Song, Z., Jin, F., Lin, C.-H., &amp; Cheung, W. M. (2024). Unveiling the pathways to informal learning: A mixed-method investigation into motivation and attitudes of teachers. <em>In Proceedings of the 2024 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/2112626</li>
+          <li>Song, Z., Sun, L., Lin, C.-H., &amp; Hui, S. Y. (2024). Promoting pre-service teachers’ competencies in teaching online. <em>In Proceedings of the 2024 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/2113163</li>
+          <li>Jin, F., Song, Z., Sun, L., &amp; Lin, C.-H. (2024). The AI assistant in teacher online professional learning communities: What matters most and how? <em>In Proceedings of the 2024 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/2105510</li>
+          <li>Jin, F., Song, Z., Cheung, W. M., &amp; Lin, C.-H. (2023). Affordances of technology in online teacher professional learning communities: A systematic review. <em>In Proceedings of the 2023 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/ip.23.2010928</li>
+          <li>Lin, C.-H., Zhou, K., Jin, F., Li, W., &amp; Song, Z. (2022). Instructional design of technology-enhanced vocabulary learning activities: A research synthesis. <em>In Proceedings of the 2022 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/ip.22.1888059</li>
+          <li>Song, Z., &amp; Jin, F. (2021, December). Explore the next generation mobile learning environment for classical Chinese vocabulary: A survey study of mobile apps. <em>[Conference presentation]</em>. International Conference on Learning and Teaching 2021, Online.</li>
+          <li>Lin, C.-H., Hui, S. Y., Song, Z., &amp; Zhou, K. (2021, December). Enhancing microteaching through peer review and reflection. <em>[Conference presentation]</em>. International Conference on Learning and Teaching 2021, Online.</li>
+          <li>Lin, C.-H., Zhou, K., Jin, F., Li, W., &amp; Song, Z. (2021, July). Instructional design of technology-enhanced vocabulary learning activities: A research synthesis. <em>[Conference presentation]</em>. TeLLT &amp; CoLLT 2021, Hong Kong.</li>
         </ul>
       </div>
 
       <!-- 教学经历 -->
       <div class="section">
         <div class="sec-title">教学经历</div>
-
         <div class="entry">
           <div class="entry-left">
             <div class="entry-title">任职于新东方教育科技集团南京分校 语文教师（全职）</div>
             <div class="entry-sub">
-              担任七年级教学研究组组长，带领新教师开发“阅读名著”“写作思维与实践”；获“优秀教师奖”；为七年级学生提供高质量面授课；教授8个班（25–35人，300余人）；一对一11人；为七、八年级学生录制在线视频课程；与家长沟通提高学生动机；根据学生反馈改进课程与形成性评价；为新教师提供情感支持与教学策略；2018–2019年Q3、Q4家长满意度95.3%、97.5%；初中学生试卷命题与分析。
+              担任七年级教学研究组组长，带领新教师共同开发课程，如“阅读名著”和“写作思维与实践”；获“优秀教师奖”；为七年级学生提供高质量面授课；教授8个班级（25–35人，300余人）；一对一教学11人；录制七、八年级在线视频课程；与家长沟通协作以提高学生学习动机；根据学生反馈改进课程与形成性评价；为新教师提供情感支持和教学策略以促进集体效能；2018–2019年Q3、Q4家长满意度分别为95.3%和97.5%；承担初中学生试卷命题与分析。
             </div>
           </div>
           <div class="entry-date">2018.2–2019.6</div>
@@ -253,15 +238,11 @@ layout: null
       <div class="section">
         <div class="sec-title">证书</div>
         <div class="entry">
-          <div class="entry-left">
-            中国高中语文教师资格证
-          </div>
+          <div class="entry-left">中国高中语文教师资格证</div>
           <div class="entry-date">2018.7.18</div>
         </div>
         <div class="entry">
-          <div class="entry-left">
-            中国计算机二级证书
-          </div>
+          <div class="entry-left">中国计算机二级证书</div>
           <div class="entry-date">2015.9</div>
         </div>
       </div>
@@ -282,7 +263,7 @@ layout: null
           <div class="entry-date">2020.9–2021.11</div>
         </div>
         <div class="entry">
-          <div class="entry-left">山东大学中文语言文学本科二班文娱委员，组织诗词朗诵等活动</div>
+          <div class="entry-left">山东大学中文语言文学本科文娱委员，组织诗词朗诵等活动</div>
           <div class="entry-date">2015.10–2017.4</div>
         </div>
         <div class="entry">
@@ -309,7 +290,7 @@ layout: null
       </div>
     </div>
 
-    <!-- 英文版内容 -->
+    <!-- ================= 英文界面 ================= -->
     <div id="cv-en" style="display:none;">
       <!-- Contact -->
       <div class="section">
@@ -327,16 +308,15 @@ layout: null
       <div class="section">
         <div class="sec-title">Research Interests</div>
         <ul class="plain">
-          <li>Technology-enhanced Language Education</li>
-          <li>Teacher Education</li>
-          <li>Informal Learning / Personal Learning Networks (PLNs)</li>
+          <li>Technology-enhanced language education</li>
+          <li>Teacher education</li>
+          <li>Teachers’ informal learning / Personal learning networks (PLNs)</li>
         </ul>
       </div>
 
       <!-- Education & Honours -->
       <div class="section">
-        <div class="sec-title">Education & Honours</div>
-
+        <div class="sec-title">Education &amp; Honours</div>
         <div class="entry">
           <div class="entry-left">
             <div class="entry-title">The University of Hong Kong (HKU)</div>
@@ -344,18 +324,16 @@ layout: null
           </div>
           <div class="entry-date">2022.8–present</div>
         </div>
-
         <div class="entry">
           <div class="entry-left">
             <div class="entry-title">The University of Hong Kong (HKU)</div>
-            <div class="entry-sub">Chinese Language Education (M.Ed.); Degree classification: Distinction</div>
+            <div class="entry-sub">M.Ed. in Chinese Language Education; Degree classification: Distinction</div>
           </div>
           <div class="entry-date">2020.9–2021.9</div>
         </div>
-
         <div class="entry">
           <div class="entry-left">
-            <div class="entry-title">Shandong University (SDU) “985”; Top 10-ranked in China</div>
+            <div class="entry-title">Shandong University (SDU), “985”, Top 10-ranked in China</div>
             <div class="entry-sub">BA in Chinese Language and Literature; GPA 87.15/100 (Top 10%); “Excellent Student Scholarship”</div>
           </div>
           <div class="entry-date">2014.9–2018.6</div>
@@ -365,7 +343,6 @@ layout: null
       <!-- Research Experience -->
       <div class="section">
         <div class="sec-title">Research Experience</div>
-
         <div class="entry">
           <div class="entry-left">
             <div class="entry-title">Research in Prof. Lin Chin-Hsi’s lab, HKU</div>
@@ -373,51 +350,43 @@ layout: null
           </div>
           <div class="entry-date">2022.9–present</div>
         </div>
-
         <div class="entry">
           <div class="entry-left">
-            <div class="entry-title">Research Assistant (Full-time) in Prof. Lin’s lab, HKU</div>
+            <div class="entry-title">Research Assistant (Full-time), Prof. Lin’s lab, HKU</div>
             <div class="entry-sub">
-              Previous participated projects and responsibilities:
-              <ul class="plain">
-                <li>Writing in “Enhancing Ethnic-Minority Students’ Writing Skills through GenAI: The WISE Framework” (E&T project, 2023–2024)</li>
-                <li>Assisting in writing the proposal for the Public Policy Research Funding Scheme (2024)</li>
-                <li>Assisting with design of teacher training courses for 3rd/4th-year students and preparing syllabus, lesson plans, slides and worksheets</li>
-                <li>Engaging in the goal setting and lesson plan writing of the “Vocabulary Teaching Manual” project</li>
-                <li>Participating in literature review, data analysis and chart production for “The Design of Technology-enhanced Vocabulary Learning: A Research Synthesis”, and conducting meta-analysis through CMA</li>
-                <li>Participating in literature collection and writing of the “Teaching Chinese Reading in Online and Blended Modes” project</li>
-                <li>Assisting in writing the proposal for the “Facilitating Peer Review and Reflection through Technology” project funded by TDG 2021</li>
-                <li>Engaging in “Enhancing microteaching through peer review and reflection” (TDG 2020), interviewing students to ascertain their perceptions, self-efficacy, problems and achievements</li>
-                <li>Assisting with design of courses for the UGC-funded “Initiatives for Virtual Teaching and Learning by Individual University” project</li>
-              </ul>
+              Writing in “Enhancing Ethnic-Minority Students’ Writing Skills through GenAI: The WISE Framework” of E&amp;T project (2023–2024); assisting in writing the proposal for the Public Policy Research Funding Scheme (2024); assisting with design of teacher training courses for students in Year 3 and Year 4 and preparing materials including syllabus, lesson plans, slides and worksheets; engaging in the goal setting and lesson plan writing of the “Vocabulary Teaching Manual” project; participating in literature review, data analysis and chart production for “The Design of Technology-enhanced Vocabulary Learning: A Research Synthesis,” and conducting meta-analysis through CMA; participating in literature collection and writing of the “Teaching Chinese Reading in Online and Blended Modes” project; assisting in writing the proposal for the “Facilitating Peer Review and Reflection through Technology” project funded by TDG 2021; engaging in “Enhancing microteaching through peer review and reflection” funded by TDG 2020, interviewing students to ascertain their perceptions of peer review and reflection, self-efficacy, problems and achievements; assisting with design of courses for the UGC-funded “Initiatives for Virtual Teaching and Learning by Individual University” project. 
             </div>
           </div>
           <div class="entry-date">2021.7–2022.8</div>
         </div>
       </div>
 
-      <!-- Publications -->
+      <!-- Publications (English full) -->
       <div class="section">
         <div class="sec-title">Publications</div>
         <ul class="plain">
-          <li>Song, Z., Qin, J., Jin, F., Cheung, W. M., &amp; Lin, C. H. (2025). A case study of teachers’ generative artificial intelligence integration processes and factors influencing them. <em>Teaching and Teacher Education, 165</em>, 105157.</li>
-          <li>Jin, F., Peng, X., Sun, L., Song, Z., Zhou, K., &amp; Lin, C. (2025). Knowledge (co‐)construction among artificial intelligence, novice teachers, and experienced teachers in an online professional learning community. <em>Journal of Computer Assisted Learning, 41(2)</em>, e70004.</li>
-          <li>Jin, F., Song, Z., Cheung, W. M., Lin, C. H., &amp; Liu, T. (2024). Technological affordances in teachers' online professional learning communities: A systematic review. <em>Journal of Computer Assisted Learning, 40(3)</em>, 1019–1039.</li>
-          <li>Zhou, K., Jin, F., Li, W., Song, Z., Huang, X., &amp; Lin, C. H. (2024). The design of technology-enhanced vocabulary learning: A systematic review. <em>Education and Information Technologies, 29(12)</em>, 14875–14897.</li>
-          <li>Zhou, K., Sun, L., Song, Z., Jin, F., Cheung, W. M., &amp; Lin, C.-H. (2023). The design of technology-enhanced second-language vocabulary learning: A research synthesis. <em>SSRN Electronic Journal</em>.</li>
-          <li>Sun, Z., Xu, R., Deng, L., Jin, F., Song, Z., &amp; Lin, C. H. (2023). Beyond coding and counting: Exploring teachers’ practical knowledge online through epistemic network analysis. <em>Computers &amp; Education, 192</em>, 104647.</li>
+          <li>Song, Z., Qin, J., Jin, F., Cheung, W. M., &amp; Lin, C. H. (2025). A case study of teachers’ generative artificial intelligence integration processes and factors influencing them. <em>Teaching and Teacher Education, 165</em>, 105157. https://doi.org/10.1016/j.tate.2025.105157</li>
+          <li>Jin, F., Peng, X., Sun, L., Song, Z., Zhou, K., &amp; Lin, C. (2025). Knowledge (co‐)construction among artificial intelligence, novice teachers, and experienced teachers in an online professional learning community. <em>Journal of Computer Assisted Learning, 41(2)</em>, e70004. https://doi.org/10.1111/jcal.70004</li>
+          <li>Jin, F., Song, Z., Cheung, W. M., Lin, C. H., &amp; Liu, T. (2024). Technological affordances in teachers' online professional learning communities: A systematic review. <em>Journal of Computer Assisted Learning, 40(3)</em>, 1019–1039. https://doi.org/10.1111/jcal.12935</li>
+          <li>Zhou, K., Jin, F., Li, W., Song, Z., Huang, X., &amp; Lin, C. H. (2024). The design of technology-enhanced vocabulary learning: A systematic review. <em>Education and Information Technologies, 29(12)</em>, 14875–14897. https://doi.org/10.1007/s10639-023-12423-y</li>
+          <li>Zhou, K., Sun, L., Song, Z., Jin, F., Cheung, W. M., &amp; Lin, C.-H. (2023). The Design of Technology-Enhanced Second-Language Vocabulary Learning: A Research Synthesis. <em>SSRN Electronic Journal</em>. https://doi.org/10.2139/ssrn.4347187</li>
+          <li>Sun, Z., Xu, R., Deng, L., Jin, F., Song, Z., &amp; Lin, C. H. (2023). Beyond coding and counting: Exploring teachers’ practical knowledge online through epistemic network analysis. <em>Computers &amp; Education, 192</em>, 104647. https://doi.org/10.1016/j.compedu.2022.104647</li>
         </ul>
       </div>
 
-      <!-- Conferences -->
+      <!-- Conferences (English full) -->
       <div class="section">
         <div class="sec-title">Conferences</div>
         <ul class="plain">
-          <li>Jin, F., Lin, C.-H., &amp; Song, Z. (2025). Exploring the effect of GenAI on students’ writing and visualizing the writing process through HRV (heart rate variability). AERA Annual Meeting, Denver.</li>
-          <li>Song, Z., Jin, F., Lin, C.-H., &amp; Cheung, W. M. (2024). Unveiling the pathways to informal learning: A mixed-method investigation into motivation and attitudes of teachers. AERA Annual Meeting.</li>
-          <li>Song, Z., Sun, L., Lin, C.-H., &amp; Hui, S. Y. (2024). Promoting pre-service teachers’ competencies in teaching online. AERA Annual Meeting.</li>
-          <li>Jin, F., Song, Z., Sun, L., &amp; Lin, C.-H. (2024). The AI assistant in teacher online professional learning communities: What matters most and how? AERA Annual Meeting.</li>
-          <li>Lin, C.-H., Hui, S. Y., Song, Z., &amp; Zhou, K. (2021, December). Enhancing microteaching through peer review and reflection. International Conference on Learning and Teaching 2021.</li>
+          <li>Jin, F., Lin, C.-H., &amp; Song, Z. (2025). Exploring the effect of GenAI on students’ writing and visualizing the writing process through HRV (heart rate variability). <em>Proceedings of the 2025 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/2193066</li>
+          <li>Song, Z., Jin, F., Lin, C.-H., &amp; Cheung, W. M. (2024). Unveiling the pathways to informal learning: A mixed-method investigation into motivation and attitudes of teachers. <em>Proceedings of the 2024 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/2112626</li>
+          <li>Song, Z., Sun, L., Lin, C.-H., &amp; Hui, S. Y. (2024). Promoting pre-service teachers’ competencies in teaching online. <em>Proceedings of the 2024 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/2113163</li>
+          <li>Jin, F., Song, Z., Sun, L., &amp; Lin, C.-H. (2024). The AI assistant in teacher online professional learning communities: What matters most and how? <em>Proceedings of the 2024 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/2105510</li>
+          <li>Jin, F., Song, Z., Cheung, W. M., &amp; Lin, C.-H. (2023). Affordances of technology in online teacher professional learning communities: A systematic review. <em>Proceedings of the 2023 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/ip.23.2010928</li>
+          <li>Lin, C.-H., Zhou, K., Jin, F., Li, W., &amp; Song, Z. (2022). Instructional design of technology-enhanced vocabulary learning activities: A research synthesis. <em>Proceedings of the 2022 AERA Annual Meeting</em>. American Educational Research Association. https://doi.org/10.3102/ip.22.1888059</li>
+          <li>Song, Z., &amp; Jin, F. (2021, December). Explore the next generation mobile learning environment for classical Chinese vocabulary: A survey study of mobile apps. <em>International Conference on Learning and Teaching 2021</em>, Online.</li>
+          <li>Lin, C.-H., Hui, S. Y., Song, Z., &amp; Zhou, K. (2021, December). Enhancing microteaching through peer review and reflection. <em>International Conference on Learning and Teaching 2021</em>, Online.</li>
+          <li>Lin, C.-H., Zhou, K., Jin, F., Li, W., &amp; Song, Z. (2021, July). Instructional design of technology-enhanced vocabulary learning activities: A research synthesis. <em>TeLLT &amp; CoLLT 2021</em>, Hong Kong.</li>
         </ul>
       </div>
 
@@ -428,7 +397,7 @@ layout: null
           <div class="entry-left">
             <div class="entry-title">Employment in New Oriental Education &amp; Technology Group, Nanjing Branch – Chinese Teacher (Full-time)</div>
             <div class="entry-sub">
-              Research Group Leader of Teaching for Grade 7; co-developed “Reading Masterpiece” and “Think-routines and practices in writing”; honoured with “Excellent Teacher Award”; delivered high-quality face-to-face lessons to Grade 7 students; taught 8 classes (25–35 students each; 300+ in total); one-to-one teaching (11 students); delivered online video lessons to Grades 7 and 8; communicated and collaborated with parents to increase students’ motivation; improved courses and formative assessments based on student feedback; provided emotional support and teaching strategies to novice teachers to promote collective efficacy; parents’ favourable rate was 95.3% and 97.5% in Q3 and Q4 of 2018–2019; produced and analysed junior high school students’ examination papers.
+              As the Research Group Leader of Teaching for Grade 7, led new teachers to develop the courses such as “Reading Masterpiece” and “Think-routines and practices in writing”. Honoured with “Excellent Teacher Award” for contribution to Grade 7 reading course design. Delivered high-quality face-to-face lessons to Grade 7 students; taught eight classes (25 to 35 students each; more than 300 students in total); one-to-one teaching (11 students). Delivered online video lessons to students in Grades 7 and 8. Communicated and collaborated with parents to increase students’ motivation; received feedback from students to improve courses and formative assessments; provided emotional support and teaching strategies to novice teachers to promote collective efficacy. Parents’ favourable rate was 95.3 and 97.5 percent in Q3 and Q4 of 2018 to 2019.
             </div>
           </div>
           <div class="entry-date">2018.2–2019.6</div>
@@ -448,11 +417,11 @@ layout: null
         </div>
       </div>
 
-      <!-- Leadership & Societal Responsibilities -->
+      <!-- Leadership & Cultural Activities -->
       <div class="section">
-        <div class="sec-title">Leadership &amp; Societal Responsibilities</div>
+        <div class="sec-title">Leadership &amp; Cultural Activities</div>
         <div class="entry">
-          <div class="entry-left">Official MPhil/PhD student coordinator at HKU</div>
+          <div class="entry-left">Official MPhil/PhD student representative at HKU</div>
           <div class="entry-date">2023.7–2023.12</div>
         </div>
         <div class="entry">
@@ -460,69 +429,43 @@ layout: null
           <div class="entry-date">2023.3–2024.6</div>
         </div>
         <div class="entry">
-          <div class="entry-left">Monitor of Chinese Language Education (M.Ed.), HKU</div>
+          <div class="entry-left">Monitor, M.Ed. in Chinese Language Education, HKU</div>
           <div class="entry-date">2020.9–2021.11</div>
         </div>
         <div class="entry">
-          <div class="entry-left">Recreation Secretary, Class 2, BA Chinese Language &amp; Literature, SDU; organised cultural activities (poetry reading)</div>
-          <div class="entry-date">2015.10–2017.4</div>
-        </div>
-        <div class="entry">
-          <div class="entry-left">Co-organiser of college orientation activities, SDU</div>
-          <div class="entry-date">2015.3–2016.9</div>
-        </div>
-        <div class="entry">
-          <div class="entry-left">Co-organiser of intramural sports events, SDU</div>
-          <div class="entry-date">2015.3–2016.11</div>
-        </div>
-      </div>
-
-      <!-- Cultural Diversity -->
-      <div class="section">
-        <div class="sec-title">Cultural Diversity</div>
-        <div class="entry">
-          <div class="entry-left">Collaborated with international students at HKU to produce and perform the Chinese version of the Broadway musical “Fun Home”.</div>
+          <div class="entry-left">Co-produced and performed the Chinese version of the Broadway musical “Fun Home” with international students at HKU</div>
           <div class="entry-date">2024.10–2025.4</div>
-        </div>
-        <div class="entry">
-          <div class="entry-left">Collaborated with foreign students at SDU to perform a drama and won the first prize in the 10th Broadway Cultural Festival.</div>
-          <div class="entry-date">2015.10</div>
-        </div>
-        <div class="entry">
-          <div class="entry-left">Selected as a volunteer to assist foreign guests at the International Confucius Cultural Festival; received the “Excellent Volunteer Award”.</div>
-          <div class="entry-date">2016</div>
         </div>
       </div>
     </div>
-
   </main>
 
   <script>
     const zhBtn = document.querySelector('[data-lang="zh"]');
     const enBtn = document.querySelector('[data-lang="en"]');
-    const zhCV = document.getElementById("cv-zh");
-    const enCV = document.getElementById("cv-en");
-    const nameEl = document.getElementById("name");
-    const subEl = document.getElementById("subtitle");
+    const zhCV = document.getElementById('cv-zh');
+    const enCV = document.getElementById('cv-en');
+    const nameEl = document.getElementById('name');
+    const subEl = document.getElementById('subtitle');
 
-    zhBtn.addEventListener("click", () => {
-      zhBtn.classList.add("active");
-      enBtn.classList.remove("active");
-      zhCV.style.display = "block";
-      enCV.style.display = "none";
-      document.documentElement.lang = "zh";
-      nameEl.textContent = "宋梓聪";
-      subEl.textContent = "香港大学 · 教育学院 · 博士研究生（语言与素养教育）";
+    zhBtn.addEventListener('click', () => {
+      zhBtn.classList.add('active');
+      enBtn.classList.remove('active');
+      zhCV.style.display = 'block';
+      enCV.style.display = 'none';
+      document.documentElement.lang = 'zh';
+      nameEl.textContent = '宋梓聪';
+      subEl.textContent = '香港大学 · 教育学院 · 博士研究生（语言与素养教育）';
     });
 
-    enBtn.addEventListener("click", () => {
-      enBtn.classList.add("active");
-      zhBtn.classList.remove("active");
-      zhCV.style.display = "none";
-      enCV.style.display = "block";
-      document.documentElement.lang = "en";
-      nameEl.textContent = "Song Zicong";
-      subEl.textContent = "PhD Student, Faculty of Education, The University of Hong Kong";
+    enBtn.addEventListener('click', () => {
+      enBtn.classList.add('active');
+      zhBtn.classList.remove('active');
+      zhCV.style.display = 'none';
+      enCV.style.display = 'block';
+      document.documentElement.lang = 'en';
+      nameEl.textContent = 'Song Zicong';
+      subEl.textContent = 'PhD Student, Faculty of Education, The University of Hong Kong';
     });
   </script>
 </body>
